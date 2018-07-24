@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: server_provider_producer
+
+server:
+  port: 8012
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123456@localhost:8001/eureka
+  instance:
+    prefer-ip-address: true
+

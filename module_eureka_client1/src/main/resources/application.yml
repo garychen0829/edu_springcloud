@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: server_provider_consumer
+
+server:
+  port: 8011
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123456@localhost:8001/eureka
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      my-metadata: 我自定义的元数据
+##    health-check-url-path: ${management.context-path}/health
+
+##management:
+##  context-path: /hello
+
